@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\jaque\OneDrive\Área de Trabalho\GitHub_Repositorios\Jogo-da-velha\.metadata\.plugins\org.eclipse.jdt.core
+2196199803.index
+2038277092.index

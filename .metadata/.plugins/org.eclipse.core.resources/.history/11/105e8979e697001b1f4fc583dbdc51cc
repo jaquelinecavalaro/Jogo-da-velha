@@ -1,0 +1,68 @@
+package Jogo.da.velha;
+
+import javax.swing.*; //para puxar tudo relacionado a essa biblioteca
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class JogoDaVelha extends JFrame {
+	//vamos criar botoes
+	JButton [] bt = new JButton[9];
+	boolean xo = false;
+	boolean [] click = new boolean [9];
+	
+	public JogoDaVelha() {
+		setVisible(true);
+		setTitle("Jogo da Velha");
+		setDefaultCloseOperation(3);
+		setLayout(null);
+		setBounds(250,100, 700, 500);
+		int cont =0;
+		
+		for(int i = 0; i<3; i++) {
+			for (int j = 0; j<3; j++) {
+				bt[cont] = new JButton();
+				
+				add (bt[cont]);
+				bt[cont].setBounds((100* i) + 50, (100*j)+50, 95, 95);
+				cont++;
+			}
+		}
+		//vamos definir a ação dos botoes
+		
+		for (int i =0; i<9; i++) {
+			click [i] = false;
+		}
+		
+		
+		bt[0].addActionListener(new java.awt.event.ActionListener(){
+		@Override
+		public void actionPerformed (ActionEvent ae) {
+			//oq qro  aconteça com o botao
+			if(click[0] == false) {
+				click [0] = true;
+				mudar(bt[0]);
+			
+			}
+		}
+				
+		});
+				
+	}		
+				
+	public void mudar (JButton btn) {
+			if(xo) {
+				btn.setText("O");
+				xo = false;
+			}else {
+				btn.setText("X");
+				xo=true;
+			}
+		
+	}	
+				
+	public static void main (String[] args) {
+		
+		new JogoDaVelha ();
+	}
+}
