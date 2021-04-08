@@ -4,6 +4,6 @@
 :movie_camera: https://www.youtube.com/watch?v=oLKzKOI8ml4<br>
 <br>
 
-:trophy: Jogo rodando pela IDE Eclipse :new_moon: <br>
+      :trophy: Jogo rodando pela IDE Eclipse :new_moon: <br>
 <img src="https://media.giphy.com/media/Cnns36gzkGo6I6O23w/giphy.gif">
 
